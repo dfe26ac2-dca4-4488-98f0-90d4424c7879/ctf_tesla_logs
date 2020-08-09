@@ -1,0 +1,17 @@
+
+aioisotp
+asammdf
+can-isotp
+canmatrix
+cantools
+ipython
+
+#
+jupyter
+notebook
+
+
+pre-commit
+# CAN
+python-can
+udsoncan
