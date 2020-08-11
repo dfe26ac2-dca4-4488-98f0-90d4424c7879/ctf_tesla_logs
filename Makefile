@@ -36,3 +36,16 @@ ovaltine: tesla_autogen.dbc
 .PHONY: ovaltine2
 ovaltine2: tesla_autogen.dbc
 	cantools monitor --channel vcan0 tesla_autogen.dbc
+
+.PHONY: playback
+playback:
+	canplayer -I final_log vcan0=can2
+
+.PHONY: clean
+clean:
+	@git clean -xfdn
+	@echo "Run make clean-yes to confirm"
+
+.PHONY: clean-yes
+clean-yes:
+	git clean -xfd
